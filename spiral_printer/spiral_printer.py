@@ -21,7 +21,7 @@ class SpirtalPrinter:
     def _reverse(self, array_2d):
         return [item for item in reversed(array_2d)]
 
-    def __str__(self):
+    def print(self):
         array_2d = [[*item] for item in self.start_array_2d]
 
         if self.start_print_dimension == 'col':
@@ -43,4 +43,7 @@ class SpirtalPrinter:
             array_2d_copy = self._reverse(array_2d_copy)
             array_2d = [[*item] for item in array_2d_copy]
 
-        return string_to_print.strip()
+        return print(string_to_print.strip())
+
+printer = SpirtalPrinter(eg_array)
+printer.print()
