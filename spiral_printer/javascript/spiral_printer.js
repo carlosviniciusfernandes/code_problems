@@ -50,5 +50,3 @@ class SpriralPrinter {
 
 const printer = new SpriralPrinter(arr)
 printer.print()
-
-
